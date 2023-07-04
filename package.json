@@ -1,0 +1,58 @@
+{
+  "name": "telegraph2md",
+  "version": "1.0.0",
+  "description": "Converts telegra.ph page to markdown and downloads assets",
+  "main": "dist/lib.cjs.js",
+  "module": "dist/lib.esm.js",
+  "types": "dist/lib.d.ts",
+  "bin": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "keywords": [
+    "telegra.ph",
+    "telegraph",
+    "markdown"
+  ],
+  "author": "Yuriy Bahur <yuriybahur4@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriybahur1/telegraph2md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuriybahur1/telegraph2md/issues"
+  },
+  "homepage": "https://github.com/yuriybahur1/telegraph2md#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.8.8",
+    "rollup": "^3.26.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "ts-jest": "^29.1.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
